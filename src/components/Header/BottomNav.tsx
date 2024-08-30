@@ -26,7 +26,7 @@ export default function BottomNav() {
                         if (item === active) {
                             return <p key={index} className="text-2xl font-bold text-sky-500 underline underline-offset-8 decoration-4 cursor-pointer">{item}</p>
                         }
-                        else return <p key={index} className="text-2xl font-bold hover:text-white cursor-pointer">{item}</p>
+                        else return <p key={index} className="text-2xl font-bold text-gray-300 hover:text-white cursor-pointer">{item}</p>
                     })}
                 </div>
             </div>

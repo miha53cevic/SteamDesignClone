@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export interface Props {
@@ -6,9 +7,12 @@ export interface Props {
 
 export default function SteamLayout({ children }: Props) {
     return (
-        <div className="h-lvh bg-slate-800">
+        <div className="h-screen max-h-screen flex flex-col bg-slate-800">
             <Header />
-            {children}
+            <div className="flex-grow overflow-auto">
+                {children}
+            </div>
+            <Footer />
         </div>
     );
 }
