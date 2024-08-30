@@ -10,7 +10,7 @@ const topNav = [
 
 export default function TopNav() {
     return (
-        <nav className="flex pl-2">
+        <nav className="flex pl-2 flex-wrap">
             <div className="flex gap-4 text-gray-400 flex-grow py-1">
                 {topNav.map((item, index) => {
                     const renderItem = item === "Steam" ?
@@ -42,7 +42,7 @@ export default function TopNav() {
                     <FaDesktop />
                 </div>
             </div>
-            <div className="flex items-center text-gray-500 ml-2">
+            <div className="hidden md:flex items-center text-gray-500 ml-2">
                 <div className="p-1 hover:bg-slate-700 hover:text-white">
                     <FaRegWindowMinimize fontSize={"1.25rem"} className="-translate-y-1/4" />
                 </div>

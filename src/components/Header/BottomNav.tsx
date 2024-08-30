@@ -11,7 +11,7 @@ const active: typeof bottomNav[number] = "LIBRARY";
 
 export default function BottomNav() {
     return (
-        <nav className="flex pl-2 pb-5">
+        <nav className="pl-2 pb-5">
             <div className="text-gray-500 flex items-center gap-4">
                 <div className="flex gap-4">
                     <button className="hover:text-white">
@@ -21,7 +21,7 @@ export default function BottomNav() {
                         <FaArrowRight fontSize={"1.5rem"} />
                     </button>
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-6 flex-wrap justify-center md:justify-normal">
                     {bottomNav.map((item, index) => {
                         if (item === active) {
                             return <p key={index} className="text-2xl font-bold text-sky-500 underline underline-offset-8 decoration-4 cursor-pointer">{item}</p>
