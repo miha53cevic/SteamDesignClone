@@ -20,7 +20,7 @@ export default function Sidebar() {
             </div>
 
             <div className="flex items-center p-2 gap-2 text-slate-400">
-                <p className="bg-slate-800 text-ellipsis whitespace-nowrap overflow-hidden p-1 cursor-pointer hover:bg-slate-700">
+                <p className="bg-slate-800 text-ellipsis whitespace-nowrap overflow-hidden p-1 cursor-pointer hover:bg-slate-700 flex-grow">
                     Games, Soundtracks, and Software
                 </p>
                 <FaClock fontSize={"1.25rem"} className="cursor-pointer hover:text-slate-300" />
